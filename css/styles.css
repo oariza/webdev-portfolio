@@ -46,7 +46,8 @@ h2 {
 h3 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #4A72B2
+  color: #4A72B2;
+  padding-top: 5.5rem;
 }
 
 h4 {
@@ -222,9 +223,6 @@ header {
 
 
 /*Acerca de mi */
-#this-is-me {
-  padding-top: 6rem;
-}
 
 @media (min-width: 768px) {
     .about-me {
@@ -248,9 +246,6 @@ header {
 
 
 /* Proyectos */
-#my-projects {
-  padding-top: 5rem;
-}
 @media (min-width: 768px) {
   .project-cards {
     display: flex;
@@ -267,17 +262,9 @@ header {
   flex-direction: column;
 }
 
-.project:last-of-type {
-  margin-bottom: 0;
-}
-
 @media (min-width: 768px) {
   .project {
     flex: 0 0 calc(33.3% - 2rem);
-  }
-
-  .project:last-of-type {
-    margin: 0 0 4rem 0;
   }
 }
 
@@ -312,10 +299,23 @@ header {
   }
 }
 
+/*Habilidades */
+
+.habilities-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.habilities-icons .fab {
+  font-size: 5rem;
+  margin: 1rem 2rem;
+  color: #212121;
+}
+
 /* Contacto */
 #my-contact {
   margin-bottom: 0;
-  padding-top: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
