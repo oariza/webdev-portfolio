@@ -79,7 +79,7 @@ a {
   border-radius: .5rem;
   text-align: center;
   padding: 1.3rem 6rem;
-  margin: 2rem 0 0 0;
+  margin: 0;
   font-size: 2rem;
   font-weight: 400;
   color: #000000;
@@ -186,12 +186,8 @@ header {
 }
 
 @media (min-width: 768px) {
-  .principal {
-    height: 100vh;
-  }
-
   .intro {
-    
+    height: 90vh;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
@@ -271,13 +267,17 @@ header {
   flex-direction: column;
 }
 
+.project:last-of-type {
+  margin-bottom: 0;
+}
+
 @media (min-width: 768px) {
   .project {
     flex: 0 0 calc(33.3% - 2rem);
   }
 
-  .project p {
-    min-height: 5rem;
+  .project:last-of-type {
+    margin: 0 0 4rem 0;
   }
 }
 
@@ -286,12 +286,24 @@ header {
   font-weight: 200;
 }
 
+@media (min-width: 768px) {
+  .technologies {
+    min-height: 5rem;
+  }
+}
+
 .project-img {
   width: 100%;
 }
 
 .project-description {
   font-size: 1.8rem;
+}
+
+@media (min-width: 768px) {
+  .project-description {
+    min-height: 13rem;
+  }
 }
 
 /* Contacto */
@@ -325,9 +337,23 @@ li a {
   color: #212121;
 }
 
+@media (min-width: 768px) {
+  .contact {
+    height: 80vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
 .contact h4 {
   margin-top: 7rem;
   text-align: center;
+}
+
+.contact p {
+  font-size: 1.8rem;
+  margin: 0;
 }
 
 /* Footer */
